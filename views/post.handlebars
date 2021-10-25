@@ -1,0 +1,14 @@
+<div class="container mt-5">
+  <span class="badge bg-secondary">{{category}}</span>
+  <h1 class="mt-5 text-center">{{name}}</h1>  
+  <p class="card-text">
+    By 
+    {{#if author}} 
+      <span class="text-success">{{author}}</span>
+    {{else}}
+      <span class="text-danger">Anonymous</span>
+    {{/if}}
+    | {{this.date}}
+  </p>
+  {{content}}
+</div>
